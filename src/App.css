@@ -1,38 +1,57 @@
-.App {
+.sidenav {
+    right: 0;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    /* position: fixed; Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    
+    background-color: rgba(74, 123, 230, 0.3); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 15px 3px;
   text-align: center;
+  /* font-family: 'Ranga', cursive; */
+  text-decoration: none;
+  /* font-size: 40px; */
+  color: #070606;
+  display: block;
+  transition: 0.3s;
+
+  font: 300 18px/1.2 Avenir,Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Close Button*/
+
+.sidenav .closebtn {
+  /* position: absolute; */
+  top:0px;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 50px;}
+  .sidenav a {font-size: 28px;}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
