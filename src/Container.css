@@ -18,6 +18,9 @@ html, body {
 .hamburger-menu {
   top:10px;
   border-radius: 50%;
+  transition-property:right;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
   position: absolute;
   color: #f07c34;
 }
